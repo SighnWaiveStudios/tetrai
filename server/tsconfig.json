@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "lib": ["es5", "es6", "dom"],
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*",
+    "__test__/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

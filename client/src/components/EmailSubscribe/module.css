@@ -1,0 +1,10 @@
+.Subscribe {
+  margin: 10px;
+}
+.Subscribe label {
+  margin-right: 10px;
+}
+.Subscribe label,
+.Subscribe input {
+  margin-top: 10px;
+}

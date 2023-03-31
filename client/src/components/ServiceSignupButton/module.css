@@ -1,0 +1,42 @@
+.signup-button {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  vertical-align: middle;
+  width: 250px;
+  margin: 1rem;
+  padding: 0.875rem 1rem;
+  background: transparent;
+  border: 1pt solid #ccc;
+  border-radius: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signup-button .react-icons {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.signup-button:hover:enabled {
+  background: transparent;
+  border: 1pt solid #999;
+  box-shadow: 1px 2px 3px #ccc;
+}
+
+.signup-button:disabled {
+  cursor: not-allowed;
+}
+
+.signup-button .prepend {
+  margin-top: 0.25rem;
+  text-align: left;
+}
+.signup-button .text {
+  text-align: left;
+}
+.signup-button .append {
+  margin-top: 0.25rem;
+  text-align: right;
+}
