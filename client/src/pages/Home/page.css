@@ -1,24 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
 .Home {
+  height: 100vh;
   color: #333;
-}
-
-.Home #fishbowl,
-.Home .Logo {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.Home .Logo {
-  z-index: 4;
-  font-size: 64px;
+  overflow-y: auto;
 }
 
 .Home .Header {
+  position: relative;
   color: #fff;
   font-family: 'Delicious Handrawn', cursive;
   height: 500px;
@@ -27,6 +16,20 @@
     rgba(184, 111, 0, 0.8) 0%,
     rgba(255, 209, 12, 0.8) 100%
   );
+}
+
+.Home .Header #fishbowl,
+.Home .Header .Logo {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.Home .Header .Logo {
+  z-index: 4;
+  font-size: 64px;
 }
 
 .Home .Content {
