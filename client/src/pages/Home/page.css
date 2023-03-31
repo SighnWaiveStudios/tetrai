@@ -4,19 +4,16 @@
   color: #333;
 }
 
-.Home #fishbowl {
+.Home #fishbowl,
+.Home .Logo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
 }
 
 .Home .Logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 4;
   font-size: 64px;
 }
@@ -24,7 +21,7 @@
 .Home .Header {
   color: #fff;
   font-family: 'Delicious Handrawn', cursive;
-  min-height: 800px;
+  height: 500px;
   background: linear-gradient(
     60deg,
     rgba(184, 111, 0, 0.8) 0%,
