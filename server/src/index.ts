@@ -1,3 +1,5 @@
+import "./data";
+
 async function startAPI() {
 
   const { default: apiServer } = await import('./api');

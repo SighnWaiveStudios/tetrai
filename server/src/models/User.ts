@@ -4,8 +4,12 @@ class User {
   authenticated: boolean = false;
 
   populate(id) {
-    // this.name = 
-    return this;
+    // Check database for id
+    return false;
+  }
+
+  store(userInfo) {
+
   }
 }
 
