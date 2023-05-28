@@ -3,6 +3,7 @@ import Bubbles from '../../components/Bubbles';
 import EmailSubscribe from '../../components/EmailSubscribe';
 import Fish from '../../components/Fish';
 import FishBowl from '../../components/FishBowl';
+import TTS from '../../components/TTS';
 import './page.css';
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
         A big fish is coming to streaming.
         <EmailSubscribe></EmailSubscribe>
       </div>
+      <TTS></TTS>
     </div>
   );
 }

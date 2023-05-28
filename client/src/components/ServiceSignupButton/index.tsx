@@ -13,20 +13,19 @@ export default function ServiceSignupButton(props: propTypes) {
   let logo;
   switch (props.service) {
     case 'YouTube':
-      logo = <FaYoutube color=''/>
-      break;
+      logo = <FaYoutube color='#FF0000'/>
+      break
     case 'Facebook':
-      logo = <FaFacebook color=''/>
-      break;
+      logo = <FaFacebook color='#4267B2'/>
+      break
     case 'Twitch':
     default:
       logo = <FaTwitch color='#9146FF'/>
-      break;
+      break
   }
 
   const handleClick = () => {
-
-    window.open(props.href, "_blank", "popup,width=850,height=700,menubar=no,location=no,scrollbars=no,status=no,toolbar=no");
+    window.open(props.href, "_blank", "popup,width=850,height=700,menubar=no,location=no,scrollbars=no,status=no,toolbar=no")
   }
 
   return (

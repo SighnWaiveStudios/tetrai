@@ -1,10 +1,10 @@
 #tetrai {
-  height: 300px;
+  height: 200px;
   width: 200px;
-  background: url(./octocat.png) left center;
-  animation: animateSprite 15s steps(1) infinite, swim 15s ease-in-out infinite;
+  background: url(./tetrai.png) left center;
+  animation: animateSprite 25s steps(1) infinite, swim 25s ease-in-out infinite;
   position: absolute;
-  right: -200px;
+  right: -100px;
   top: 50%;
   margin-top: -150px;
   z-index: 100;
@@ -46,25 +46,25 @@
     transform: translate(0, 0); /* Starting position */
   }
   20% {
-    transform: translate(calc(-50vb - 100px), 0); /* Animate to center of screen */
+    transform: translate(-230%, 0); /* Animate to center of screen */
   }
   25% {
-    transform: translate(calc(-50vb - 100px), 0); /* Stay at the center for 1 second */
+    transform: translate(-230%, 0); /* Stay at the center for 1 second */
   }
   35% {
-    transform: translate(calc(-50vb - 100px), -5vi); /* Animate up for 2 seconds */
+    transform: translate(-230%, -40%); /* Animate up for 2 seconds */
   }
   50% {
-    transform: translate(-25vb, 8vi); /* Animate bottom right for 3 seconds */
+    transform: translate(-80%, 40%); /* Animate bottom right for 3 seconds */
   }
   60% {
-    transform: translate(-25vb, -5vi); /* Animate up at right of the screen */
+    transform: translate(-80%, -40%); /* Animate up at right of the screen */
   }
   67% {
-    transform: translate(-25vb, -5vi);
+    transform: translate(-80%, -40%);
   }
 
   100% {
-    transform: translate(calc(-100vb - 300px), 0); /* Animate past left past the screen */
+    transform: translate(calc(-300% - 300px), 0); /* Animate past left past the screen */
   }
 }

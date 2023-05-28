@@ -26,10 +26,12 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
+    "@types/express-session": "^1.17.7",
     "chalk": "^4.1.2",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-react-views": "^0.11.0",
+    "express-session": "^1.17.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   }

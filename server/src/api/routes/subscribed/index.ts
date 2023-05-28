@@ -1,6 +1,7 @@
 import express from 'express';
 import chalk from 'chalk';
 import { stringify } from 'querystring';
+import User from '../../../models/User';
 
 const router = express.Router();
 
@@ -39,6 +40,12 @@ router.get('/', async (req, res) => {
   //   "token_type": "bearer"
   // }
 
+  // TODO: Do I need to set an expiration of the session based on the above?
+  // TODO: How do I handle Keeping the session active if the service restarts?
+  // TODO: Setup Expiration handling.
+
+  req.session.user = new User();
+
   const userReq = await fetch('https://api.twitch.tv/helix/users', {
     headers: {
       "Authorization": `Bearer ${authRes.access_token}`,
@@ -63,9 +70,15 @@ router.get('/', async (req, res) => {
   // }
 
   // TODO: Store above data to service account.
+  // TODO: Implement Session Token.
+  req.session.user.populate(userRes.id);
+  req.session.user.email = userRes.email;
+  req.session.user.name = userRes.display_name;
+  req.session.user.authenticated = true;
 
+  console.log(req.session.user);
   console.log(chalk.hex('#9146FF')('Subscriber: '), `${userRes.display_name} subscribed`);
-  res.redirect(`/subscribed?display_name=${userRes.display_name}`);
+  res.redirect(`/subscribed?display_name=${userRes.display_name}&token=${"token"}`);
 
 });
 
